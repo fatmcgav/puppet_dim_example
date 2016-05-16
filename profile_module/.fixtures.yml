@@ -1,0 +1,8 @@
+---
+fixtures:
+  symlinks:
+    profile_module: "#{source_dir}"
+    calling_module: "../../../../calling_module"
+    framework_module: "../../../../framework_module"
+  forge_modules:
+    module_data: "ripienaar/module_data"

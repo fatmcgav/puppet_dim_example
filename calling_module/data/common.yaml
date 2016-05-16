@@ -1,0 +1,3 @@
+---
+# Data in Module
+calling_module::data_value: 'test'
