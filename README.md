@@ -33,25 +33,25 @@ When running the spec tests in 'profile_module', the tests fail:
 >profile_module
 >Warning: The use of 'import' is deprecated at 3. See http://links.puppetlabs.com/puppet-import-deprecation
 >   (at /Users/gavinw/.rvm/gems/ruby-1.9.3-p551@dim_test/gems/puppet-3.7.5/lib/puppet/parser/parser_support.rb:110:in `import')
->Debug: importing '/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/manifests/site.pp' in environment rp_env
->Debug: importing '/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/profile_module/manifests/init.pp' in environment rp_env
->Debug: Automatically imported profile_module from profile_module into rp_env
->Debug: importing '/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/calling_module/manifests/init.pp' in environment rp_env
->Debug: Automatically imported calling_module from calling_module into rp_env
->Debug: importing '/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/framework_module/manifests/init.pp' in environment rp_env
->Debug: Automatically imported framework_module from framework_module into rp_env
->Debug: Scope(Class[Framework_module]): Retrieving template calling_module/test.txt.erb
->Debug: template[/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/calling_module/templates/test.txt.erb]: Bound template variables for /Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/calling_module/templates/test.txt.erb in 0.00 seconds
->Debug: hiera(): Hiera YAML backend starting
->Debug: hiera(): Looking up calling_module::data_value in YAML backend
->Debug: hiera(): Looking for data source test
->Debug: hiera(): Cannot find datafile spec/fixtures/hiera/hieradata/test.yaml, skipping
->Debug: hiera(): Looking for data source common
->Debug: hiera(): Cannot find datafile spec/fixtures/hiera/hieradata/common.yaml, skipping
->Debug: hiera(): Hiera Module Data backend starting
->Debug: hiera(): Looking up calling_module::data_value in Module Data backend
->Debug: hiera(): Looking for data in source /Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/framework_module/data/common.yaml
->Error: Failed to parse template calling_module/test.txt.erb:
+>Debug: importing '/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/manifests/site.pp' in environment rp_env  
+>Debug: importing '/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/profile_module/manifests/init.pp' in environment rp_env  
+>Debug: Automatically imported profile_module from profile_module into rp_env  
+>Debug: importing '/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/calling_module/manifests/init.pp' in environment rp_env  
+>Debug: Automatically imported calling_module from calling_module into rp_env  
+>Debug: importing '/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/framework_module/manifests/init.pp' in environment rp_env  
+>Debug: Automatically imported framework_module from framework_module into rp_env  
+>Debug: Scope(Class[Framework_module]): Retrieving template calling_module/test.txt.erb  
+>Debug: template[/Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/calling_module/templates/test.txt.erb]: Bound template variables for /Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/calling_module/templates/test.txt.erb in 0.00 seconds  
+>Debug: hiera(): Hiera YAML backend starting  
+>Debug: hiera(): Looking up calling_module::data_value in YAML backend  
+>Debug: hiera(): Looking for data source test  
+>Debug: hiera(): Cannot find datafile spec/fixtures/hiera/hieradata/test.yaml, skipping  
+>Debug: hiera(): Looking for data source common  
+>Debug: hiera(): Cannot find datafile spec/fixtures/hiera/hieradata/common.yaml, skipping  
+>Debug: hiera(): Hiera Module Data backend starting  
+>Debug: hiera(): Looking up calling_module::data_value in Module Data backend  
+>Debug: hiera(): Looking for data in source /Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/framework_module/data/common.yaml  
+>Error: Failed to parse template calling_module/test.txt.erb:  
 >  Filepath: /Users/gavinw/.rvm/gems/ruby-1.9.3-p551@dim_test/gems/puppet-3.7.5/lib/hiera_puppet.rb
 >  Line: 14
 >  Detail: Could not find data item calling_module::data_value in any Hiera data file and no default supplied
