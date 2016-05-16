@@ -55,7 +55,7 @@ When running the spec tests in 'profile_module', the tests fail:
 >  Filepath: /Users/gavinw/.rvm/gems/ruby-1.9.3-p551@dim_test/gems/puppet-3.7.5/lib/hiera_puppet.rb
 >  Line: 14
 >  Detail: Could not find data item calling_module::data_value in any Hiera data file and no default supplied
-> at /Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/framework_module/manifests/init.pp:8 on node lt0772.local
+> at /Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/framework_module/manifests/init.pp:8 on node lt0772.local  
 >  should contain Class[profile_module] (FAILED - 1)
 >
 >Total resources:   0
@@ -67,15 +67,15 @@ When running the spec tests in 'profile_module', the tests fail:
 >
 >Failures:
 >
->  1) profile_module should contain Class[profile_module]
->     Failure/Error: should create_class('profile_module')
+>  1) profile_module should contain Class[profile_module]  
+>     Failure/Error: should create_class('profile_module')  
 >
->     Puppet::Error:
->       Failed to parse template calling_module/test.txt.erb:
->         Filepath: /Users/gavinw/.rvm/gems/ruby-1.9.3-p551@dim_test/gems/puppet-3.7.5/lib/hiera_puppet.rb
->         Line: 14
->         Detail: Could not find data item calling_module::data_value in any Hiera data file and no default supplied
->        at /Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/framework_module/manifests/init.pp:8 on node lt0772.local
+>     Puppet::Error:  
+>       Failed to parse template calling_module/test.txt.erb:  
+>         Filepath: /Users/gavinw/.rvm/gems/ruby-1.9.3-p551@dim_test/gems/puppet-3.7.5/lib/hiera_puppet.rb  
+>         Line: 14  
+>         Detail: Could not find data item calling_module::data_value in any Hiera data file and no default supplied  
+>        at /Users/gavinw/Puppet/scratch/puppet_dim_example/profile_module/spec/fixtures/modules/framework_module/manifests/init.pp:8 on node lt0772.local  
 >     \# /Users/gavinw/.rvm/gems/ruby-1.9.3-p551@dim_test/gems/puppet-3.7.5/lib/puppet/parser/functions/template.rb:26:in `rescue in block (2 levels) in <top (required)>'
 >     \# /Users/gavinw/.rvm/gems/ruby-1.9.3-p551@dim_test/gems/puppet-3.7.5/lib/puppet/parser/functions/template.rb:22:in `block (2 levels) in <top (required)>'
 >     \# /Users/gavinw/.rvm/gems/ruby-1.9.3-p551@dim_test/gems/puppet-3.7.5/lib/puppet/parser/functions/template.rb:15:in `collect'
